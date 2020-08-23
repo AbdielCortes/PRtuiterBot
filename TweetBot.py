@@ -69,7 +69,8 @@ def reply_to_mentions():
 def tweet():
     try:
         print("tweeting")
-        API.update_status(TweetGenerator.generate_tweet())
+        # API.update_status(TweetGenerator.generate_tweet())
+        API.update_status("tweet")
     except:
         print("error when tweeting")
 
@@ -88,6 +89,6 @@ while True:
     #     tweet()
     #     tweet_time = time.time()
 
-    if (time.time() - mentions_time) == 3 :
-        mentions_time = time.time()
-        print("timer")
+    if (time.time() - tweet_time) == 60 :
+        tweet()
+        tweet_time = time.time()
