@@ -73,7 +73,7 @@ tweet_time = time.time()
 
 while True:
     # if 3 minutes have passed since the last time we replied to mentions
-    if ((mentions_time + 180) == time.time()):
+    if ((mentions_time + 60) == time.time()):
         reply_to_mentions()
         mentions_time = time.time()
 
