@@ -88,6 +88,6 @@ while True:
     #     tweet()
     #     tweet_time = time.time()
 
-    if ((mentions_time + 3) == time.time()):
+    if (time.time() - mentions_time) == 3 :
         mentions_time = time.time()
         print("timer")
