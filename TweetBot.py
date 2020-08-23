@@ -79,11 +79,14 @@ tweet_time = time.time()
 
 while True:
     # if 3 minutes have passed since the last time we replied to mentions
-    if ((mentions_time + 180) == time.time()):
-        reply_to_mentions()
-        mentions_time = time.time()
+    # if ((mentions_time + 180) == time.time()):
+    #     reply_to_mentions()
+    #     mentions_time = time.time()
 
     # if one hour has passed since the last tweet was made
-    if ((tweet_time + 3600) == time.time()):
-        tweet()
-        tweet_time = time.time()
+    # if ((tweet_time + 3600) == time.time()):
+    #     tweet()
+    #     tweet_time = time.time()
+
+    reply_to_mentions()
+    time.sleep(180)
