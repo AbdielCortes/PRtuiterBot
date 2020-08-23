@@ -36,7 +36,7 @@ def store_last_seen_id(last_seen_id, file_name):
     f_write.close()
     return
 
-# name of the file where we're storing the id of the last tweet we replied to
+# Name of the file where we're storing the id of the last tweet we replied to
 LAST_SEEN_ID_FILE = "LastSeenId.txt"
 
 # Replies to all the tweets where the bot was mentioned
