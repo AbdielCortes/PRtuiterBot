@@ -59,13 +59,19 @@ def reply_to_mentions():
         print("stored last seen id: " + str(last_seen_id))
 
     for mention in reversed(mentions):
-        print("replying to @" + mention.user.screen_name + " with tweet id: " + str(mention.id))
-        API.update_status("@" + mention.user.screen_name + " cagate en tu madre", mention.id)
+        try:
+            print("replying to @" + mention.user.screen_name + " with tweet id: " + str(mention.id))
+            API.update_status("@" + mention.user.screen_name + " cagate en tu madre", mention.id)
+        except:
+            print("error when replying to mention")
 
 # Generates a tweet using TweetGenerator and the posts it
 def tweet():
-    print("tweeting")
-    API.update_status(TweetGenerator.generate_tweet())
+    try:
+        print("tweeting")
+        API.update_status(TweetGenerator.generate_tweet())
+    except:
+        print("error when tweeting")
 
 
 mentions_time = time.time()
@@ -73,7 +79,7 @@ tweet_time = time.time()
 
 while True:
     # if 3 minutes have passed since the last time we replied to mentions
-    if ((mentions_time + 60) == time.time()):
+    if ((mentions_time + 180) == time.time()):
         reply_to_mentions()
         mentions_time = time.time()
 
