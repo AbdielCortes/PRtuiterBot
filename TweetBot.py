@@ -88,5 +88,6 @@ while True:
     #     tweet()
     #     tweet_time = time.time()
 
-    reply_to_mentions()
-    time.sleep(180)
+    if ((mentions_time + 3) == time.time()):
+        mentions_time = time.time()
+        print("timer")
