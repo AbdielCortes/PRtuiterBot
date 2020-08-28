@@ -47,10 +47,7 @@ def reply_to_mentions():
     # list containing all the tweets where the bot was mentioned
     # tweets are like dictionaries
     print("getting mentions")
-    if last_seen_id == 0:
-        mentions = API.mentions_timeline()
-    else:
-        mentions = API.mentions_timeline(last_seen_id, tweet_mode='extended')
+    mentions = API.mentions_timeline(last_seen_id, tweet_mode='extended')
 
     # if we found mentions, then store the last id
     if len(mentions) > 0:

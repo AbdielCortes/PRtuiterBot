@@ -7,7 +7,8 @@ pharases = ["jevos y panas", "la bicha y el caco", "una baby toxica", "un airbnb
            "esto y un blunt", "dividir los votos", "estadity", "PNPPD", "el bipartidismo",
            "Lugaro vs Dalmau", "la independencia", "Ponce", "empanadilla vs pastelillo", "Bad Bunny",
            "un esquema de piramide", "la colonia", "la estadidad", "Cuba y Venezuela", "el socialismo",
-           "el comunismo", "los pelus de la UPR", "la UPR", "Lugaro", "Dalmau", "el PNP"]
+           "el comunismo", "los pelus de la UPR", "la UPR", "Lugaro", "Dalmau", "el PNP", "sexo toxico",
+           "hablar de atomos"]
 
 sentences = ["Somos %s, pero no estan listos para esa conversacion", "Quisiera que fueramos %s",
              "Gracias a #Forex, logre tener %s", "Odio que en Puerto Rico lo unico que hay es %s",
