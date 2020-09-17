@@ -16,7 +16,8 @@ sentences = ["Somos %s, pero no estan listos para esa conversacion", "Quisiera q
              "Cabron por que no entiendes que es %s, NO es un esquema de piramide",
              "Hablas de %s como si tuiverans un cabron doctorado en eso",
              "El problema de Puerto Rico es %s",
-             "Si llego a ver un tweet mas de %s, me voy pal carajo de esta app del pajaro azul"]
+             "Si llego a ver un tweet mas de %s, me voy pal carajo de esta app del pajaro azul",
+             "Te menti, no tengo netflix, vamos a hablar de %s"]
 
 def generate_tweet():
     # pick a phrase by generation a random index

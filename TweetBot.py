@@ -73,5 +73,4 @@ def tweet():
 
 while True:
     tweet()
-    reply_to_mentions()
     time.sleep(3600)
